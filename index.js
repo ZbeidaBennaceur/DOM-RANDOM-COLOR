@@ -1,0 +1,11 @@
+const square = document.querySelector("#color-box");
+const button= document.querySelector("#change-color-btn");
+
+button.addEventListener("click",function getRandomColor (){
+    let R=Math.floor(Math.random()*255);
+    let V=Math.floor(Math.random()*255);
+    let B=Math.floor(Math.random()*255);
+
+    square.style.backgroundColor=`rgb(${R},${V},${B})`;
+    button.style.backgroundColor=`rgb(${R},${V},${B})`;
+});
