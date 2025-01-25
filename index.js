@@ -1,3 +1,5 @@
+
+document.addEventListener("DOMContentLoaded",function() {
 const square = document.querySelector("#color-box");
 const button= document.querySelector("#change-color-btn");
 
@@ -9,3 +11,4 @@ button.addEventListener("click",function getRandomColor (){
     square.style.backgroundColor=`rgb(${R},${V},${B})`;
     button.style.backgroundColor=`rgb(${R},${V},${B})`;
 });
+})
